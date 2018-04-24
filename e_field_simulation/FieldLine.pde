@@ -8,7 +8,7 @@ class FieldLine {
     this.x = x;
     this.y = y;
     tan_theta = 0;
-    r = 8;
+    r = 10;
   }
   
   void update(PointCharge[] charges) {
@@ -42,8 +42,8 @@ class FieldLine {
     stroke(0);
     fill(0);
     
-    int diff_x = (int) pow((r * r / (1 + tan_theta * tan_theta)), 0.5);
-    int diff_y = (int) pow((r * r / (1 + 1 / (tan_theta * tan_theta))), 0.5);
+    float diff_x = (pow((r * r / (1 + tan_theta * tan_theta)), 0.5));
+    float diff_y = (pow((r * r / (1 + 1 / (tan_theta * tan_theta))), 0.5));
     if (tan_theta < 0) diff_y *= -1;
     
     line(x - diff_x, y - diff_y, x + diff_x, y + diff_y);

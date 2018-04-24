@@ -19,9 +19,9 @@ void setup() {
 
 void draw() {
   background(255);
-  //n1.updateLocation((int)mouseX, (int)mouseY);
+  n1.updateLocation((int)mouseX, (int)mouseY);
   e.update();
-  t.update();
+  //t.update();
   display();
 }
 
@@ -32,5 +32,5 @@ void display() {
   //p3.display();
   //p4.display();
   n1.display();
-  t.display();
+  //t.display();
 }
