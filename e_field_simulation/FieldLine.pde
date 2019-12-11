@@ -8,7 +8,7 @@ class FieldLine {
     this.x = x;
     this.y = y;
     tan_theta = 0;
-    r = 10;
+    r = 15;
   }
   
   void update(PointCharge[] charges) {
